@@ -1,45 +1,48 @@
 {
-  "name": "watchface-tutorial-hrm",
-  "author": "MakeAwesomeHappen",
-  "version": "1.0.0",
-  "keywords": ["pebble-app"],
-  "private": true,
-  "dependencies": {},
-  "pebble": {
-    "displayName": "watchface-tutorial-hrm",
-    "uuid": "9d15a3db-bbec-4a06-afb3-e0842bf6c176",
-    "sdkVersion": "3",
-    "enableMultiJS": true,
-    "targetPlatforms": [
-      "aplite",
-      "basalt",
-      "chalk",
-      "diorite"
+    "author": "MakeAwesomeHappen",
+    "dependencies": {},
+    "keywords": [
+        "pebble-app"
     ],
-    "watchapp": {
-      "watchface": true
-    },
-    "messageKeys": [
-    ],
-    "capabilities": [ "health" ],
-    "resources": {
-      "media": [
-        {
-          "type": "font",
-          "name": "FONT_PERFECT_DOS_48",
-          "file": "perfect-dos-vga.ttf"
+    "name": "watchface-tutorial-hrm",
+    "pebble": {
+        "capabilities": [
+            "health"
+        ],
+        "displayName": "watchface-tutorial-hrm",
+        "enableMultiJS": true,
+        "messageKeys": [],
+        "projectType": "native",
+        "resources": {
+            "media": [
+                {
+                    "file": "fonts/perfect-dos-vga.ttf",
+                    "name": "FONT_PERFECT_DOS_20",
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/perfect-dos-vga.ttf",
+                    "name": "FONT_PERFECT_DOS_48",
+                    "type": "font"
+                },
+                {
+                    "file": "images/background.png",
+                    "name": "IMAGE_BACKGROUND",
+                    "type": "bitmap"
+                }
+            ]
         },
-        {
-          "type": "font",
-          "name": "FONT_PERFECT_DOS_20",
-          "file": "perfect-dos-vga.ttf"
-        },
-        {
-          "type": "bitmap",
-          "name": "IMAGE_BACKGROUND",
-          "file": "background.png"
+        "sdkVersion": "3",
+        "targetPlatforms": [
+            "aplite",
+            "basalt",
+            "chalk",
+            "diorite"
+        ],
+        "uuid": "9d15a3db-bbec-4a06-afb3-e0842bf6c176",
+        "watchapp": {
+            "watchface": true
         }
-      ]
-    }
-  }
+    },
+    "version": "1.0.0"
 }
